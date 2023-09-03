@@ -101,7 +101,7 @@
     <button 
       class="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600 transition duration-150 ease-in-out" 
       on:click={handleSubmit}
-      disabled={false}
+      disabled={true}
     >
       Submit
     </button>
