@@ -1,6 +1,7 @@
 <script>
   import "../app.css";
   export let title = "TeamOne"; 
+
 </script>
 
 <div class="min-h-screen flex flex-col bg-gray-100">

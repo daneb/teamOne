@@ -30,3 +30,5 @@ export async function getAllSummaryData() {
   const summaries = querySnapshot.docs.map(doc => doc.data());
   return summaries;
 }
+
+export { firebaseApp }

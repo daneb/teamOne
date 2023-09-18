@@ -64,7 +64,7 @@
 
 
   <!-- Main form container -->
-<div class="summary-container mx-auto my-20 bg-white p-8 w-full max-w-xl rounded-md shadow-md space-y-6">
+<div class="summary-container mx-auto my-2 bg-white p-8 w-full max-w-xl rounded-md shadow-md space-y-6">
 
   <!-- Form Header -->
   <h2 class="text-gray-800 text-xl font-medium leading-relaxed mb-4">
