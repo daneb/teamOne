@@ -1,5 +1,6 @@
 <script>
   import "../app.css";
+	import UserSummaries from "./UserSummaries.svelte";
   export let title = "TeamOne"; 
 
 </script>
@@ -16,7 +17,7 @@
       
       <!-- Navigation -->
       <nav class="space-x-4">
-        <a href="/summaryList" class="text-white hover:text-sky-500 transition duration-150">Dashboard</a>
+        <a href="/userSummaries" class="text-white hover:text-sky-500 transition duration-150">Dashboard</a>
         <a href="/summary" class="text-white hover:text-sky-500 transition duration-150">Summary</a>
       </nav>
     </div>
@@ -24,6 +25,6 @@
 
   <!-- Content -->
   <div class="flex-grow p-4 flex items-center justify-center">
-    <slot></slot> <!-- This will render the content of the pages that use this layout -->
+    <slot></slot>
   </div>
 </div>
