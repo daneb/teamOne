@@ -3,6 +3,7 @@
   import { firebaseApp } from '$lib/firebase';
   import { getAuth, signInWithPopup, GoogleAuthProvider, OAuthCredential } from "firebase/auth";
   import { ArrowRightOnRectangle } from "svelte-heros";
+	import UserSummaries from "../(authed)/userSummaries/UserSummaries.svelte";
 
 
   let user : any = null;
@@ -54,7 +55,7 @@
         <!-- Navigation -->
         {#if user}
         <nav class="space-x-4">
-          <a href="/summaryList" class="text-white hover:text-sky-500 transition duration-150">Dashboard</a>
+          <a href="/userSummaries" class="text-white hover:text-sky-500 transition duration-150">Past Submissions</a>
           <a href="/summary" class="text-white hover:text-sky-500 transition duration-150">Summary</a>
           <button on:click={() => auth.signOut()} class="text-white hover:text-sky-500 transition duration-150">Logout</button>
         </nav>
@@ -67,10 +68,5 @@
         </nav>
         {/if}
       </div>
-    </div>
-  
-    <!-- Content -->
-    <div class="flex-grow p-4 flex items-center justify-center">
-      <slot></slot> <!-- This will render the content of the pages that use this layout -->
-    </div>
+    </div>  
   </div>

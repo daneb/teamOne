@@ -1,7 +1,3 @@
-<style lang="postcss">
-:global(html) {
-    background-color: theme(colors.blue.300);
-}
-</style>
+<h1>Welcome!</h1>
 
-
+<slot />

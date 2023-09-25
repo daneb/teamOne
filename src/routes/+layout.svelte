@@ -1,9 +1,14 @@
 <script>
   import "../app.css";
-	import UserSummaries from "./UserSummaries.svelte";
   export let title = "TeamOne"; 
-
 </script>
+
+
+<style lang="postcss">
+:global(html) {
+  background-color: theme(colors.blue.300);
+}
+</style>
 
 <div class="min-h-screen flex flex-col bg-gray-100">
   <!-- Header -->
@@ -25,6 +30,6 @@
 
   <!-- Content -->
   <div class="flex-grow p-4 flex items-center justify-center">
-    <slot></slot>
+    <slot />
   </div>
 </div>
